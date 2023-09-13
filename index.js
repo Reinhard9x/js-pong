@@ -89,13 +89,13 @@ document.getElementById('startbutton').onclick = function (){
     //ball collisions
     function collisionwithplat(){
         if(velx < 0 && newballpos[0] <= rectmeasure + 3 && newballpos[1] <= Lplatpos[4][1] + rectmeasure && newballpos[1] + rectmeasure >= Lplatpos[0][1]){
-            velx = -velx
+            velx = -velx*1.1
         }
         else if(velx > 0 && newballpos[0] >= canvas.width-rectmeasure - 3 && newballpos[1] <= Rplatpos[4][1] + rectmeasure && newballpos[1] + rectmeasure >= Rplatpos[0][1]){
-            velx = -velx
+            velx = -velx*1.1
         }
         else if(velx > 0 && newballpos[0] + rectmeasure >= canvas.width-rectmeasure  - 3 && newballpos[1] <= Rplatpos[4][1] + rectmeasure && newballpos[1] + rectmeasure >= Rplatpos[0][1]){
-            velx = -velx
+            velx = -velx*1.1
         }
     }
     function collisionwithsides(){
