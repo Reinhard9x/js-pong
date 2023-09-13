@@ -1,0 +1,18 @@
+#mycanvas{
+    border: 1px;
+    border-style: solid;
+}
+#mydiv{
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+}
+h2 {
+    display: inline;
+}
+#scoreleft{
+    padding-right: 50px;
+}
+#scoreright{
+    padding-left: 50px;
+}
